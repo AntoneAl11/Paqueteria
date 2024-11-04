@@ -3,115 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Remitente y Destinatario</title>
-    <link rel="stylesheet" href="public/estilos.css"> <!-- Si decides agregar CSS -->
+    <title>Registro de Envíos</title>
+    <link rel="stylesheet" href="public/estilos.css">
 </head>
 <body>
-    <!--Creación de las etiquetas de los registros de Remitente-->
-    <div class="section">
+    <h1>Registro de Envíos</h1>
+
+    <section>
         <h2>Datos del Remitente</h2>
-        <label for="remitente-nombre">Nombre:</label>
-        <input type="text" id="remitente-nombre" name="remitente-nombre" required>
+        <label for="remitenteNombre">Nombre:</label>
+        <input type="text" id="remitenteNombre" required><br>
 
-        <label for="remitente-ciudad">Ciudad:</label>
-        <input type="text" id="remitente-ciudad" name="remitente-ciudad" required>
+        <label for="remitenteCiudad">Ciudad:</label>
+        <input type="text" id="remitenteCiudad" required><br>
 
-        <label for="remitente-estado">Estado:</label>
-        <input type="text" id="remitente-estado" name="remitente-estado" required>
+        <label for="remitenteEstado">Estado:</label>
+        <input type="text" id="remitenteEstado" required><br>
 
-        <label for="remitente-domicilio">Domicilio:</label>
-        <input type="text" id="remitente-domicilio" name="remitente-domicilio" required>
+        <label for="remitenteDomicilio">Domicilio:</label>
+        <input type="text" id="remitenteDomicilio" required><br>
 
-        <label for="remitente-codigo-postal">Código Postal:</label>
-        <input type="text" id="remitente-codigo-postal" name="remitente-codigo-postal" required>
+        <label for="remitenteCodigoPostal">Código Postal:</label>
+        <input type="text" id="remitenteCodigoPostal" required><br>
 
-        <label for="remitente-telefono">Teléfono:</label>
-        <input type="text" id="remitente-telefono" name="remitente-telefono" required>
-    </div>
+        <label for="remitenteTelefono">Teléfono:</label>
+        <input type="text" id="remitenteTelefono" required><br>
+    </section>
 
-    <!--Creación de las etiquetas de registros de Destinatarios-->
-    <div class="section">
+    <section>
         <h2>Datos del Destinatario</h2>
-        <label for="destinatario-nombre">Nombre:</label>
-        <input type="text" id="destinatario-nombre" name="destinatario-nombre" required>
+        <label for="destinatarioNombre">Nombre:</label>
+        <input type="text" id="destinatarioNombre" required><br>
 
-        <label for="destinatario-ciudad">Ciudad:</label>
-        <input type="text" id="destinatario-ciudad" name="destinatario-ciudad" required>
+        <label for="destinatarioCiudad">Ciudad:</label>
+        <input type="text" id="destinatarioCiudad" required><br>
 
-        <label for="destinatario-estado">Estado:</label>
-        <input type="text" id="destinatario-estado" name="destinatario-estado" required>
+        <label for="destinatarioEstado">Estado:</label>
+        <input type="text" id="destinatarioEstado" required><br>
 
-        <label for="destinatario-domicilio">Domicilio:</label>
-        <input type="text" id="destinatario-domicilio" name="destinatario-domicilio" required>
+        <label for="destinatarioDomicilio">Domicilio:</label>
+        <input type="text" id="destinatarioDomicilio" required><br>
 
-        <label for="destinatario-codigo-postal"> Código Postal:</label>
-        <input type="text" id="destinatario-codigo-postal" name="destinatario-codigo-postal" required>
+        <label for="destinatarioCodigoPostal">Código Postal:</label>
+        <input type="text" id="destinatarioCodigoPostal" required><br>
 
-        <label for="destinatario-telefono">Teléfono:</label>
-        <input type="text" id="destinatario-telefono" name="destinatario-telefono" required>
-    </div>
-<!-- Sección parra agregar los datos de la mercancia-->
-    <div class="section">
+        <label for="destinatarioTelefono">Teléfono:</label>
+        <input type="text" id="destinatarioTelefono" required><br>
+    </section>
+
+    <section>
         <h2>Datos de la Mercancía</h2>
-        <label for="mercancia-descripcion">Descripción:</label>
-        <input type="text" id="mercancia-descripcion" name="mercancia-descripcion" required>
+        <label for="mercanciaDescripcion">Descripción:</label>
+        <input type="text" id="mercanciaDescripcion" required><br>
 
-        <label for="mercancia-peso">Peso:</label>
-        <input type="text" id="mercancia-peso" name="mercancia-peso" required>
+        <label for="mercanciaPeso">Peso:</label>
+        <input type="text" id="mercanciaPeso" required><br>
 
-        <label for="mercancia-largo">Largo:</label>
-        <input type="text" id="mercancia-largo" name="mercancia-largo" required>
+        <label for="mercanciaLargo">Largo:</label>
+        <input type="text" id="mercanciaLargo" required><br>
 
-        <label for="mercancia-ancho">Ancho:</label>
-        <input type="text" id="mercancia-ancho" name="mercancia-ancho" required>
+        <label for="mercanciaAncho">Ancho:</label>
+        <input type="text" id="mercanciaAncho" required><br>
 
-        <label for="mercancia-alto">Alto:</label>
-        <input type="text" id="mercancia-alto" name="mercancia-alto" required>
+        <label for="mercanciaAlto">Alto:</label>
+        <input type="text" id="mercanciaAlto" required><br>
 
-        <label for="mercancia-fecha-salida">Fecha de Salida (dd/mm/yyyy):</label>
-        <input type="text" id="mercancia-fecha-salida" name="mercancia-fecha-salida" placeholder="dd/mm/yyyy" required>
+        <label for="mercanciaFechaSalida">Fecha de Salida (dd/mm/yyyy):</label>
+        <input type="text" id="mercanciaFechaSalida" required><br>
 
-        <label for="mercancia-fecha-llegada">Fecha de Llegada (dd/mm/yyyy):</label>
-        <input type="text" id="mercancia-fecha-llegada" name="mercancia-fecha-llegada" placeholder="dd/mm/yyyy" required>
+        <label for="mercanciaFechaLlegada">Fecha de Llegada (dd/mm/yyyy):</label>
+        <input type="text" id="mercanciaFechaLlegada" required><br>
 
-        <label for="mercancia-precio">Precio a Cobrar:</label>
-        <input type="text" id="mercancia-precio" name="mercancia-precio" required>
+        <label for="mercanciaPrecio">Precio a Cobrar:</label>
+        <input type="text" id="mercanciaPrecio" required><br>
+    </section>
 
-        <button id="registrar-btn">Registrar</button>
-    </div>
+    <button id="registrarBtn">Registrar</button>
 
-    <h2>Datos Registrados</h2>
     <table border="1">
         <thead>
             <tr>
-                <th>Nombre Remitente</th>
-                <th>Ciudad Remitente</th>
-                <th>Estado Remitente</th>
-                <th>Domicilio Remitente</th>
-                <th>Código Postal Remitente</th>
-                <th>Teléfono Remitente</th>
-                <th>Nombre Destinatario</th>
-                <th>Ciudad Destinatario</th>
-                <th>Estado Destinatario</th>
-                <th>Domicilio Destinatario</th>
-                <th>Código Postal Destinatario</th>
-                <th>Teléfono Destinatario</th>
-                <th>Descripción Mercancía</th>
-                <th>Peso Mercancía</th>
-                <th>Largo Mercancía</th>
-                <th>Ancho Mercancía</th>
-                <th>Alto Mercancía</th>
-                <th>Fecha Salida</th>
-                <th>Fecha Llegada</th>
-                <th>Precio a Cobrar</th>
+                <th>Remitente Nombre</th>
+                <th>Remitente Ciudad</th>
+                <th>Remitente Estado</th>
+                <th>Remitente Domicilio</th>
+                <th>Remitente Código Postal</th>
+                <th>Remitente Teléfono</th>
+                <th>Destinatario Nombre</th>
+                <th>Destinatario Ciudad</th>
+                <th>Destinatario Estado</th>
+                <th>Destinatario Domicilio</th>
+                <th>Destinatario Código Postal</th>
+                <th>Destinatario Teléfono</th>
+                <th>Mercancía Descripción</th>
+                <th>Mercancía Peso</th>
+                <th>Mercancía Largo</th>
+                <th>Mercancía Ancho</th>
+                <th>Mercancía Alto</th>
+                <th>Mercancía Fecha Salida</th>
+                <th>Mercancía Fecha Llegada</th>
+                <th>Mercancía Precio</th>
             </tr>
         </thead>
-        <tbody id="tabla-datos">
-            <!-- Aquí se llenarán los datos -->
+        <tbody id="tablaCuerpo">
+            <!-- Aquí se agregarán los registros -->
         </tbody>
     </table>
 
-
-    <script src="app.js"></script> <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
