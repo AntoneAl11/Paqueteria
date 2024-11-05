@@ -1,18 +1,16 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000;
 
-// Middleware para servir archivos estáticos
+// Servir archivos estáticos desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta principal
+// Ruta para servir el archivo HTML principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Iniciar el servidor
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });

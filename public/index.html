@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mercancía</title>
+</head>
+<body>
+
+    <h1>Registro de Mercancía</h1>
+    
+    <form id="registroForm">
+        <h2>Remitente</h2>
+        Nombre: <input type="text" id="remitenteNombre" required /><br />
+        Ciudad: <input type="text" id="remitenteCiudad" /><br />
+        Estado: <input type="text" id="remitenteEstado" /><br />
+        Domicilio: <input type="text" id="remitenteDomicilio" /><br />
+        CP: <input type="text" id="remitenteCP" /><br />
+        Teléfono: <input type="text" id="remitenteTelefono" /><br />
+        
+        <h2>Destinatario</h2>
+        Nombre: <input type="text" id="destinatarioNombre" required /><br />
+        Ciudad: <input type="text" id="destinatarioCiudad" /><br />
+        Estado: <input type="text" id="destinatarioEstado" /><br />
+        Domicilio: <input type="text" id="destinatarioDomicilio" /><br />
+        CP: <input type="text" id="destinatarioCP" /><br />
+        Teléfono: <input type="text" id="destinatarioTelefono" /><br />
+        
+        <h2>Mercancía</h2>
+        Descripción: <input type="text" id="mercanciaDescripcion" required /><br />
+        Peso: <input type="text" id="mercanciaPeso" /><br />
+        Largo: <input type="text" id="mercanciaLargo" /><br />
+        Ancho: <input type="text" id="mercanciaAncho" /><br />
+        Alto: <input type="text" id="mercanciaAlto" /><br />
+        Fecha de Salida: <input type="date" id="mercanciaFechaSalida" /><br />
+        Fecha de Llegada: <input type="date" id="mercanciaFechaLlegada" /><br />
+        Precio: <input type="text" id="mercanciaPrecio" /><br />
+        
+        <button id="registerButton">Registrar</button>
+    </form>
+
+    <h2>Registro de Mercancías</h2>
+    <table id="tablaRegistro" border="1">
+        <thead>
+            <tr>
+                <th>Nombre Remitente</th>
+                <th>Ciudad Remitente</th>
+                <th>Estado Remitente</th>
+                <th>Domicilio Remitente</th>
+                <th>CP Remitente</th>
+                <th>Teléfono Remitente</th>
+                <th>Nombre Destinatario</th>
+                <th>Ciudad Destinatario</th>
+                <th>Estado Destinatario</th>
+                <th>Domicilio Destinatario</th>
+                <th>CP Destinatario</th>
+                <th>Teléfono Destinatario</th>
+                <th>Descripción Mercancía</th>
+                <th>Peso Mercancía</th>
+                <th>Largo Mercancía</th>
+                <th>Ancho Mercancía</th>
+                <th>Alto Mercancía</th>
+                <th>Fecha Salida</th>
+                <th>Fecha Llegada</th>
+                <th>Precio Mercancía</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán las filas dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script> <!-- Asegúrate de que el archivo JavaScript esté vinculado correctamente -->
+</body>
+</html>
